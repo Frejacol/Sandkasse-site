@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Zain Regular";
+  src: url(../fonts/Zain-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Rammetto One Regular";
+  src: url(../fonts/RammettoOne-Regular.woff2);
+}
+
+header {
+  background-color: #778da9;
+  position: sticky;
+  top: 0;
+  padding: 20px 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-section img {
+  width: 10%;
+  height: auto;
+}
+
+.logo-section p {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Rammetto One Regular";
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-family: "Zain Regular";
+}
+
+nav ul li {
+  color: white;
+  font-size: 1.1rem;
+}
+
+main {
+  margin: 2em;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  background-color: #e0e1dd;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div h2 {
+  background-color: #1b263b;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 20px;
+  margin: 0.7em 0.5em;
+  font-size: 2em;
+}
+
+h3 {
+  margin: 0 0 0.5em 1.2em;
+  font-size: 1.5em;
+  font-family: "Zain Regular";
+}
+
+.grid_1-1 p {
+  margin-left: 1.7em;
+  line-height: 2em;
+  font-family: "Zain Regular";
+  font-size: 1.1em;
+}
+
+section img {
+  margin-top: 1.5em;
+}
+
+h2 {
+  background-color: #415a77;
+  margin: 1em 0;
+  padding: 1em;
+  color: #fff;
+  font-family: "Rammetto One Regular";
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.ishockey {
+  grid-row: 1 / 3;
+}
+
+.vandfald {
+  grid-column: 2 / 4;
+}
