@@ -122,3 +122,12 @@ h2 {
 .vandfald {
   grid-column: 2 / 4;
 }
+
+footer {
+  background-color: #778da9;
+  color: #fff;
+  padding: 1em;
+  font-family: "Zain Regular";
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
