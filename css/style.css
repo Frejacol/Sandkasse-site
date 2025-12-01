@@ -33,13 +33,13 @@ header nav {
 }
 
 .logo-section img {
-  width: 10%;
+  width: 25%;
   height: auto;
 }
 
 .logo-section p {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1em;
   font-weight: bold;
   margin: 0;
   font-family: "Rammetto One Regular";
@@ -54,7 +54,7 @@ header nav ul {
 
 nav ul li {
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.5em;
 }
 
 main {
@@ -70,23 +70,18 @@ body {
   background-color: #e0e1dd;
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 div h2 {
   background-color: #1b263b;
   color: #fff;
   padding: 0.5em;
   border-radius: 20px;
   margin: 0.7em 0.5em;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 h3 {
   margin: 0 0 0.5em 1.2em;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: "Zain Regular";
 }
 
@@ -94,7 +89,7 @@ h3 {
   margin-left: 1.7em;
   line-height: 2em;
   font-family: "Zain Regular";
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 section img {
@@ -107,20 +102,7 @@ h2 {
   padding: 1em;
   color: #fff;
   font-family: "Rammetto One Regular";
-}
-
-.grid_1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
-}
-
-.ishockey {
-  grid-row: 1 / 3;
-}
-
-.vandfald {
-  grid-column: 2 / 4;
+  font-size: 1.2em;
 }
 
 footer {
@@ -130,4 +112,91 @@ footer {
   font-family: "Zain Regular";
   line-height: 1.5em;
   font-size: 1.2em;
+}
+
+.galleri {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.roomie {
+  display: grid;
+}
+
+.roomie img {
+  grid-area: 1 / 1;
+}
+
+.roomie .caption {
+  grid-area: 1 / 1;
+  place-self: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.8em;
+  color: white;
+  border-radius: 10px;
+  font-family: "Zain Regular";
+  font-size: 1.5em;
+}
+
+@media (width >= 700px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-section p {
+    font-size: 1.8rem;
+  }
+
+  nav ul li {
+    font-size: 1.1rem;
+  }
+
+  div h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .grid_1-1 p {
+    font-size: 1.1em;
+  }
+
+  .et-trin-tilbage {
+    grid-row: 1 / 2;
+  }
+
+  .logo-section img {
+    width: 10%;
+  }
+
+  .galleri {
+    width: auto;
+    aspect-ratio: auto;
+    object-fit: initial;
+  }
+
+  .ishockey {
+    grid-row: 1 / 3;
+  }
+
+  .vandfald {
+    grid-column: 2 / 4;
+  }
 }
